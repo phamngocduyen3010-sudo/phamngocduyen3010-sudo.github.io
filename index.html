@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support — Tiện ích Hằng Ngày / Daily Utilities</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      max-width: 740px;
+      margin: 0 auto;
+      padding: 28px 20px 48px;
+      line-height: 1.6;
+      color: #1c1c1e;
+      background: #f2f2f7;
+    }
+    @media (prefers-color-scheme: dark) {
+      body { color: #f2f2f7; background: #000000; }
+      .card { background: #1c1c1e !important; border-color: #2c2c2e !important; }
+      .lang-switch { background: #1c1c1e !important; border-color: #2c2c2e !important; }
+      .lang-btn { color: #f2f2f7 !important; }
+    }
+    .header-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .lang-switch {
+      display: inline-flex;
+      background: #ffffff;
+      border: 1px solid #d1d1d6;
+      border-radius: 10px;
+      padding: 3px;
+      gap: 4px;
+    }
+    .lang-btn {
+      border: none;
+      background: transparent;
+      padding: 6px 12px;
+      border-radius: 7px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      color: #1c1c1e;
+    }
+    .lang-btn.active {
+      background: #007aff;
+      color: #ffffff !important;
+    }
+    .card {
+      background: #ffffff;
+      border-radius: 14px;
+      padding: 20px 24px;
+      margin-bottom: 16px;
+      border: 1px solid #e5e5ea;
+    }
+    h1 { font-size: 25px; margin: 0; }
+    h2 { font-size: 18px; margin-top: 0; }
+    a { color: #007aff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { padding-left: 20px; margin: 8px 0 0; }
+    li { margin-bottom: 4px; }
+    [data-lang] { display: none; }
+    body.show-vi [data-lang="vi"] { display: block; }
+    body.show-en [data-lang="en"] { display: block; }
+  </style>
+</head>
+<body class="show-vi">
+  <div class="header-row">
+    <h1>
+      <span data-lang="vi">Tiện ích Hằng Ngày — Hỗ trợ</span>
+      <span data-lang="en">Daily Utilities — Support</span>
+    </h1>
+    <div class="lang-switch" role="group" aria-label="Language">
+      <button type="button" class="lang-btn" id="btn-vi" onclick="setLang('vi')">Tiếng Việt</button>
+      <button type="button" class="lang-btn" id="btn-en" onclick="setLang('en')">English</button>
+    </div>
+  </div>
+
+  <div data-lang="vi">
+    <div class="card">
+      <h2>Giới thiệu ứng dụng</h2>
+      <p><strong>Tiện ích Hằng Ngày</strong> là bộ 10 công cụ cá nhân ưu tiên chạy cục bộ trên iPhone, không yêu cầu tạo tài khoản và không lưu dữ liệu cá nhân lên máy chủ ngoài:</p>
+      <ul>
+        <li><strong>Hôm nay &amp; Tập trung:</strong> Lịch Âm–Dương, 3 việc trọng tâm, đồng hồ Pomodoro và thói quen hằng ngày.</li>
+        <li><strong>Thời tiết &amp; Mưa:</strong> Theo dõi nhiệt độ, khả năng mưa và tự lưu bộ nhớ đệm xem khi ngoại tuyến.</li>
+        <li><strong>Nhật ký &amp; Chi tiêu:</strong> Ghi chép thu chi hằng ngày nhanh gọn trên máy.</li>
+        <li><strong>Ghi chú &amp; Đi chợ:</strong> Lưu ghi chú, danh sách mua sắm và nhắc việc.</li>
+        <li><strong>Uống nước &amp; Ngủ:</strong> Theo dõi lượng nước uống và lịch nhắc nghỉ ngơi.</li>
+        <li><strong>Đo độ ồn (dB):</strong> Đo cường độ âm thanh môi trường tức thời, không ghi âm.</li>
+        <li><strong>Quét văn bản OCR:</strong> Chụp trang sách/tài liệu và trích xuất văn bản trực tiếp trên máy.</li>
+        <li><strong>Dịch 16 ngôn ngữ:</strong> Dịch văn bản trực tiếp trên thiết bị.</li>
+        <li><strong>Quét QR / Link:</strong> Đọc mã QR và nhận diện đường dẫn an toàn.</li>
+        <li><strong>Lưu số &amp; Lọc rác:</strong> Quản lý danh sách chặn cuộc gọi làm phiền ngay trên iPhone.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>Câu hỏi thường gặp (FAQ)</h2>
+      <p><strong>Dữ liệu của tôi có bị đồng bộ lên máy chủ không?</strong><br />Không. Toàn bộ ghi chú, chi tiêu, thói quen, lịch uống nước và danh sách số chặn chỉ lưu cục bộ trên iPhone của bạn.</p>
+      <p><strong>Làm sao bật tính năng Lọc cuộc gọi rác?</strong><br />Vào <em>Cài đặt iPhone &rarr; Ứng dụng &rarr; Điện thoại &rarr; Nhận dạng &amp; chặn cuộc gọi</em> và bật công tắc <strong>Tiện ích Hằng Ngày</strong>.</p>
+    </div>
+    <div class="card">
+      <h2>Liên hệ &amp; Pháp lý</h2>
+      <p>Email hỗ trợ kỹ thuật: <a href="mailto:phamngocduyen3010@gmail.com">phamngocduyen3010@gmail.com</a></p>
+      <p>Xem <a href="./privacy.html">Chính sách Quyền riêng tư (Privacy Policy)</a></p>
+    </div>
+  </div>
+
+  <div data-lang="en">
+    <div class="card">
+      <h2>About the App</h2>
+      <p><strong>Daily Utilities (Tiện ích Hằng Ngày)</strong> is a privacy-focused suite of 10 local iPhone tools. No account sign-up is required and personal data is stored locally on your device:</p>
+      <ul>
+        <li><strong>Today &amp; Focus:</strong> Lunar/Solar calendar countdown, Top 3 daily tasks, Pomodoro timer, and habit streaks.</li>
+        <li><strong>Weather &amp; Rain:</strong> Local forecast and rain probability with offline caching.</li>
+        <li><strong>Daily Expense Journal:</strong> Fast local daily expense tracking.</li>
+        <li><strong>Notes &amp; Shopping List:</strong> Personal notes, checklists, and reminders.</li>
+        <li><strong>Water &amp; Sleep Tracker:</strong> Daily hydration goal and bedtime reminders.</li>
+        <li><strong>Decibel Noise Meter (dB):</strong> Real-time ambient sound measurement without audio recording.</li>
+        <li><strong>Text OCR Scanner:</strong> On-device document scanning and text recognition.</li>
+        <li><strong>16-Language Translator:</strong> On-device text translation.</li>
+        <li><strong>QR &amp; Live Link Scanner:</strong> QR code and URL scanning with confirmation before opening.</li>
+        <li><strong>Number Saver &amp; Spam Blocker:</strong> Local Call Directory spam call blocking on iPhone.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>Frequently Asked Questions</h2>
+      <p><strong>Is my personal data uploaded to any developer server?</strong><br />No. Notes, expenses, habits, hydration logs, and blocked phone numbers are stored locally on your iPhone.</p>
+      <p><strong>How do I enable Spam Call Blocking?</strong><br />Open <em>iPhone Settings &rarr; Apps &rarr; Phone &rarr; Call Blocking &amp; Identification</em> and turn on <strong>Tiện ích Hằng Ngày</strong>.</p>
+    </div>
+    <div class="card">
+      <h2>Contact &amp; Legal</h2>
+      <p>Technical Support Email: <a href="mailto:phamngocduyen3010@gmail.com">phamngocduyen3010@gmail.com</a></p>
+      <p>Read our <a href="./privacy.html">Privacy Policy</a></p>
+    </div>
+  </div>
+
+  <script>
+    function setLang(lang) {
+      document.body.className = lang === 'en' ? 'show-en' : 'show-vi';
+      document.getElementById('btn-vi').classList.toggle('active', lang !== 'en');
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    }
+    (function initLang() {
+      var navLang = (navigator.language || 'vi').toLowerCase();
+      setLang(navLang.startsWith('vi') ? 'vi' : 'en');
+    })();
+  </script>
+</body>
+</html>

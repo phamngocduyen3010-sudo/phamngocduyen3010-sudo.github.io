@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Tiện ích Hằng Ngày / Daily Utilities</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      max-width: 740px;
+      margin: 0 auto;
+      padding: 28px 20px 48px;
+      line-height: 1.65;
+      color: #1c1c1e;
+      background: #f2f2f7;
+    }
+    @media (prefers-color-scheme: dark) {
+      body { color: #f2f2f7; background: #000000; }
+      .card { background: #1c1c1e !important; border-color: #2c2c2e !important; }
+      .lang-switch { background: #1c1c1e !important; border-color: #2c2c2e !important; }
+      .lang-btn { color: #f2f2f7 !important; }
+    }
+    .header-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 8px;
+    }
+    .lang-switch {
+      display: inline-flex;
+      background: #ffffff;
+      border: 1px solid #d1d1d6;
+      border-radius: 10px;
+      padding: 3px;
+      gap: 4px;
+    }
+    .lang-btn {
+      border: none;
+      background: transparent;
+      padding: 6px 12px;
+      border-radius: 7px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      color: #1c1c1e;
+    }
+    .lang-btn.active {
+      background: #007aff;
+      color: #ffffff !important;
+    }
+    .card {
+      background: #ffffff;
+      border-radius: 14px;
+      padding: 20px 24px;
+      margin-bottom: 16px;
+      border: 1px solid #e5e5ea;
+    }
+    h1 { font-size: 24px; margin: 0; }
+    h2 { font-size: 17px; margin-top: 0; }
+    .meta { color: #6e6e73; font-size: 14px; margin-bottom: 20px; }
+    a { color: #007aff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { padding-left: 20px; margin: 8px 0 0; }
+    li { margin-bottom: 6px; }
+    [data-lang] { display: none; }
+    body.show-vi [data-lang="vi"] { display: block; }
+    body.show-en [data-lang="en"] { display: block; }
+  </style>
+</head>
+<body class="show-vi">
+  <div class="header-row">
+    <h1>
+      <span data-lang="vi">Chính sách Quyền riêng tư</span>
+      <span data-lang="en">Privacy Policy</span>
+    </h1>
+    <div class="lang-switch" role="group" aria-label="Language">
+      <button type="button" class="lang-btn" id="btn-vi" onclick="setLang('vi')">Tiếng Việt</button>
+      <button type="button" class="lang-btn" id="btn-en" onclick="setLang('en')">English</button>
+    </div>
+  </div>
+  <p class="meta">
+    <span data-lang="vi">Cập nhật lần cuối: 26/11/2026 &mdash; Ứng dụng: <strong>Tiện ích Hằng Ngày</strong></span>
+    <span data-lang="en">Last updated: November 26, 2026 &mdash; App: <strong>Daily Utilities (Tiện ích Hằng Ngày)</strong></span>
+  </p>
+
+  <div data-lang="vi">
+    <div class="card">
+      <h2>1. Dữ liệu cá nhân &amp; Lưu trữ cục bộ</h2>
+      <p>Ứng dụng không yêu cầu đăng ký tài khoản và không thu thập, lưu trữ hay truyền dữ liệu cá nhân (ghi chú, chi tiêu, thói quen, lịch uống nước, danh sách số điện thoại chặn) lên máy chủ của nhà phát triển. Toàn bộ dữ liệu này chỉ nằm cục bộ trên iPhone của bạn.</p>
+    </div>
+    <div class="card">
+      <h2>2. Quyền truy cập thiết bị</h2>
+      <ul>
+        <li><strong>Camera &amp; Thư viện ảnh:</strong> Chỉ dùng để quét mã QR, quét chữ chứa liên kết và nhận diện văn bản OCR trực tiếp trên thiết bị; hình ảnh không được tải lên máy chủ ngoài.</li>
+        <li><strong>Microphone:</strong> Chỉ dùng để phân tích cường độ âm thanh (dB) theo thời gian thực; ứng dụng không ghi âm và không lưu tệp âm thanh.</li>
+        <li><strong>Vị trí (Location):</strong> Chỉ dùng khi bạn cho phép trong mục Thời tiết &amp; Mưa để lấy dự báo thời tiết khu vực hiện tại; vị trí không được lưu trữ hay dùng cho mục đích theo dõi.</li>
+        <li><strong>Thông báo cục bộ:</strong> Chỉ lên lịch trực tiếp trên thiết bị khi bạn chủ động bật công tắc nhắc nhở.</li>
+        <li><strong>Call Directory:</strong> Chỉ dùng để đồng bộ danh sách số điện thoại do chính bạn thêm vào nhằm nhận dạng và chặn cuộc gọi rác trên máy.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>3. Quảng cáo (Google AdMob) &amp; App Tracking Transparency (ATT)</h2>
+      <p>Ứng dụng sử dụng dịch vụ quảng cáo <strong>Google AdMob</strong> để duy trì phiên bản miễn phí. Khi bạn đồng ý qua hộp thoại xin phép theo dõi (ATT) của iOS, Google AdMob có thể thu thập định danh thiết bị (IDFA) và dữ liệu tương tác quảng cáo theo <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Chính sách quyền riêng tư của Google</a>. Nếu bạn từ chối, ứng dụng vẫn hoạt động bình thường với quảng cáo không cá nhân hóa. Dữ liệu sức khỏe, ghi chú, chi tiêu và danh sách cuộc gọi của bạn tuyệt đối không bao giờ được chia sẻ với mạng quảng cáo.</p>
+    </div>
+    <div class="card">
+      <h2>4. Liên hệ</h2>
+      <p>Mọi thắc mắc về quyền riêng tư hoặc yêu cầu hỗ trợ, vui lòng liên hệ: <a href="mailto:phamngocduyen3010@gmail.com">phamngocduyen3010@gmail.com</a>.</p>
+      <p><a href="./index.html">&larr; Quay lại Trung tâm Hỗ trợ</a></p>
+    </div>
+  </div>
+
+  <div data-lang="en">
+    <div class="card">
+      <h2>1. Personal Data &amp; Local Storage</h2>
+      <p>The app does not require account registration and does not collect, store, or transmit your personal content (notes, expenses, habits, hydration logs, or blocked phone numbers) to any developer server. All user-created data remains stored locally on your iPhone.</p>
+    </div>
+    <div class="card">
+      <h2>2. Device Permissions</h2>
+      <ul>
+        <li><strong>Camera &amp; Photo Library:</strong> Used strictly on-device for QR scanning, live link detection, and OCR text recognition. Images are never uploaded to external servers.</li>
+        <li><strong>Microphone:</strong> Used strictly for real-time ambient decibel (dB) measurement. The app never records or stores audio files.</li>
+        <li><strong>Location:</strong> Used only when permitted in the Weather &amp; Rain tool to fetch local weather forecasts for your current area. Location data is neither stored permanently nor used for tracking.</li>
+        <li><strong>Local Notifications:</strong> Scheduled solely on your device when you explicitly enable reminders.</li>
+        <li><strong>Call Directory Extension:</strong> Used strictly to sync the phone numbers you manually add for local spam call blocking on your iPhone.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>3. Advertising (Google AdMob) &amp; App Tracking Transparency</h2>
+      <p>The free version of the app displays ads via <strong>Google AdMob</strong>. If you grant permission through the iOS App Tracking Transparency (ATT) prompt, Google AdMob may collect device identifiers (IDFA) and ad interaction data in accordance with <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>. If you decline tracking, the app remains fully functional with non-personalized ads. Health/hydration logs, notes, expenses, and call-blocking lists are never shared with advertising networks.</p>
+    </div>
+    <div class="card">
+      <h2>4. Contact Us</h2>
+      <p>If you have any questions about this Privacy Policy, please contact us at: <a href="mailto:phamngocduyen3010@gmail.com">phamngocduyen3010@gmail.com</a>.</p>
+      <p><a href="./index.html">&larr; Back to Support Center</a></p>
+    </div>
+  </div>
+
+  <script>
+    function setLang(lang) {
+      document.body.className = lang === 'en' ? 'show-en' : 'show-vi';
+      document.getElementById('btn-vi').classList.toggle('active', lang !== 'en');
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    }
+    (function initLang() {
+      var navLang = (navigator.language || 'vi').toLowerCase();
+      setLang(navLang.startsWith('vi') ? 'vi' : 'en');
+    })();
+  </script>
+</body>
+</html>
